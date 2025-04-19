@@ -1,0 +1,5 @@
+# Comando de backup:
+mysqldump -u root -p --routines --events --triggers ecommerce > backup_ecommerce.sql
+
+# Comando de restore:
+mysql -u root -p ecommerce < backup_ecommerce.sql
